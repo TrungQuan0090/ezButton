@@ -12,11 +12,12 @@ void setup() {
 void loop() {
   button.loop(); // MUST call the loop() function first
 
-  unsigned long count = button.getCount();
+  unsigned long count = button.getCount(); // dem so lan nhan 
+  
   Serial.println(count);
 
   if(count >= 100)
-    button.resetCount();
+    button.resetCount(); 
 
   
 }
